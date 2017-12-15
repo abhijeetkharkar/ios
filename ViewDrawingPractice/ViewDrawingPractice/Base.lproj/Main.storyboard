@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewDrawingPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KC8-3F-Z4H" customClass="FaceView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="501"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zkp-yI-Jo4" customClass="HairView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="137"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="KWN-Gq-Zib">
+                                                <rect key="frame" x="277" y="53" width="121" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="hairPaint:" destination="BYZ-38-t0r" eventType="valueChanged" id="wfY-tO-zbC"/>
+                                                </connections>
+                                            </slider>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6RY-1c-I8r">
+                                                <rect key="frame" x="-13" y="8" width="51" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="glassesOnOff:" destination="BYZ-38-t0r" eventType="valueChanged" id="Wui-8g-5tv"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQU-gL-VXX" customClass="EyeView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="145" width="87" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CTm-5d-4aw" customClass="IrisView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="5" width="48" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Mw-Og-QeL" customClass="PupilView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                                        <rect key="frame" x="12" y="12" width="24" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </view>
+                                                </subviews>
+                                            </view>
+                                        </subviews>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5m6-vA-eLl" customClass="EyeView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                        <rect key="frame" x="195" y="145" width="87" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ci-bT-QyU" customClass="IrisView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="5" width="48" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zIY-Wb-Ism" customClass="PupilView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                                        <rect key="frame" x="12" y="12" width="24" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </view>
+                                                </subviews>
+                                            </view>
+                                        </subviews>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-J0-2VW" customClass="NoseView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                        <rect key="frame" x="128" y="185" width="88" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lky-n3-qNF" customClass="MouthView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                        <rect key="frame" x="72" y="348" width="199" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LM6-SU-jz1" customClass="MustacheView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                        <rect key="frame" x="61" y="320" width="220" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="vvJ-Dv-sto" appends="YES" id="3DT-8D-3bS"/>
+                                        </connections>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="02j-xz-MQu" customClass="EyeBrowView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                        <rect key="frame" x="49" y="123" width="114" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bo2-PE-gpG" customClass="EyeBrowView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                        <rect key="frame" x="182" y="123" width="114" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="glassID" translatesAutoresizingMaskIntoConstraints="NO" id="cws-v2-AWn" customClass="GlassView" customModule="ViewDrawingPractice" customModuleProvider="target">
+                                        <rect key="frame" x="51" y="145" width="240" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                </subviews>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="AMF-zt-5Dl">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="colorEntered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="C2W-YT-gK3"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nMV-In-WDp"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type a color name and press Enter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3C-0c-0uZ">
+                                <rect key="frame" x="16" y="580" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.75" maxValue="1.25" translatesAutoresizingMaskIntoConstraints="NO" id="dew-UN-dWM">
+                                <rect key="frame" x="14" y="533" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="lipPout:" destination="BYZ-38-t0r" eventType="valueChanged" id="WnG-KS-N8j"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.18018619380000001" green="0.76799303760000004" blue="0.74276866590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="glassSwitch" destination="6RY-1c-I8r" id="Nnd-AM-lzo"/>
+                        <outlet property="glassView" destination="cws-v2-AWn" id="wtS-n0-do6"/>
+                        <outlet property="hair" destination="Zkp-yI-Jo4" id="9HL-cb-ebH"/>
+                        <outlet property="iris" destination="CTm-5d-4aw" id="SVL-b2-596"/>
+                        <outlet property="iris1" destination="6ci-bT-QyU" id="JrX-yb-Um8"/>
+                        <outlet property="irisColor" destination="AMF-zt-5Dl" id="pAJ-gt-6Nv"/>
+                        <outlet property="lips" destination="Lky-n3-qNF" id="rsI-Go-s8N"/>
+                        <outlet property="musSlider" destination="KWN-Gq-Zib" id="hOe-iI-9Dl"/>
+                        <outlet property="mustauche" destination="LM6-SU-jz1" id="Ggx-Qo-yz9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="vvJ-Dv-sto">
+                    <connections>
+                        <action selector="twirlMustaucheGesture:" destination="BYZ-38-t0r" id="WdE-Mf-7Mj"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="296.80000000000001" y="-350.37481259370315"/>
+        </scene>
+    </scenes>
+</document>
